@@ -1,0 +1,45 @@
+.header {
+  background-color: #d1cfcf;
+  .div_header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+    .div_logo {
+      > img {
+        width: 120px;
+      }
+    }
+  }
+}
+.div_search {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+    box-shadow: 1px 1px 4px #000;
+    @media screen and (max-width : 500px) {
+    width: 50%;
+    }
+    >div {
+    width: 20%;
+    background-color: rgb(31, 134, 237);
+    height: 30px;
+    display: grid;
+    place-items: center;
+    color: white;
+    }
+    >input {
+    width: 80%;
+    padding: 4px 10px;
+    height: 30px;
+    border: none;
+    outline: none;
+    }
+    }
