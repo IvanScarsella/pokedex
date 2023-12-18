@@ -31,8 +31,10 @@ export default function Card({ card }) {
     let pokeId = itemPokemon?.id?.toString()
 
     if (pokeId?.length === 1) {
-        pokeId = "00" + pokeId
+        pokeId = "000" + pokeId
     } else if (pokeId?.length === 2) {
+        pokeId = "00" + pokeId
+    } else if (pokeId?.length === 3) {
         pokeId = "0" + pokeId
     }
 

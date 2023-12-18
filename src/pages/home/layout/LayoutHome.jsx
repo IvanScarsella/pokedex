@@ -9,7 +9,7 @@ import * as FaIcons from "react-icons/fa";
 export default function LayoutHome() {
 
     const [arrayPokemon, setArrayPokemon] = useState([]);
-    
+
     const [allPokemons, setAllPokemons] = useState([])
 
     const [forPage, setForPage] = useState(1)
@@ -35,7 +35,7 @@ export default function LayoutHome() {
     }, [forPage]);
 
     const getAllPokemons = async () => {
-        const res = await axios.get(`${URL_POKEMON}/?offset=0&limit=1000`);
+        const res = await axios.get(`${URL_POKEMON}/?offset=0&limit=1100`);
         const promises = res.data.results.map(pokemon => {
             return pokemon
         })
@@ -71,7 +71,7 @@ export default function LayoutHome() {
                     <span
                         className={css.item_right}
                         onClick={() => {
-                            if (forPage === 67) {
+                            if (forPage === 73) {
                                 return console.log("es el ultimo");
                             }
                             setForPage(forPage + 1);
