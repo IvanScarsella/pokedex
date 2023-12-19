@@ -100,7 +100,7 @@ export default function Card({ card }) {
         rock: '#755a0e',
         fighting: '#d1321c',
         dark: '#1f1f1f',
-        bug: '#c8ff6f',
+        bug: '#bcce20',
         dragon: '#3800b9',
         electric: '#eed91e',
         fairy: '#fdb9e9',
