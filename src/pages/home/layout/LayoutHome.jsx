@@ -35,7 +35,7 @@ export default function LayoutHome() {
     }, [forPage]);
 
     const getAllPokemons = async () => {
-        const res = await axios.get(`${URL_POKEMON}/?offset=0&limit=1100`);
+        const res = await axios.get(`${URL_POKEMON}/?offset=0&limit=1300`);
         const promises = res.data.results.map(pokemon => {
             return pokemon
         })
